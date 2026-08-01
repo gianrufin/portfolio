@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gian Rufin — Designer, Brand Manager & Product Maker</title>
+<meta name="description" content="Gian Rufin is a graphic designer and brand manager from the Philippines. Founder of WeGather.Studio — a 5-star brand & web design studio — and the maker behind Tempo, Dogeared, SpotMo, BiteSize, UnderBudget, Needledrop, RigList and Wordle Tagalog.">
+<meta name="theme-color" content="#0B0C0E">
+<meta name="author" content="Gian Rufin">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gian Rufin — Designer, Brand Manager & Product Maker">
+<meta property="og:description" content="Founder of WeGather.Studio. Designing brands, websites and mobile products from the Philippines.">
+<meta property="og:image" content="assets/wegather-thumb.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B0C0E'/><text x='50' y='68' font-size='52' font-family='Georgia,serif' fill='%23F5C518' text-anchor='middle'>gr</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- ═══ grain + cursor ═══ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+<!-- ═══ loader ═══ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__word"><span>gian</span> <em>rufin</em></div>
+    <div class="loader__meta"><span class="loader__cap">designer &amp; brand manager</span><span class="loader__num" id="loaderNum">00</span></div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+</div>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<!-- ═══ nav ═══ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-cursor="home">
+    <span class="nav__mark">gr</span>
+    <span class="nav__name">Gian&nbsp;Rufin</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#studio"><span>Studio</span></a>
+    <a href="#work"><span>Work</span></a>
+    <a href="#craft"><span>Craft</span></a>
+    <a href="#about"><span>About</span></a>
+  </nav>
+  <div class="nav__end">
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme" title="Switch theme">
+      <span class="theme-toggle__track"><i></i></span>
+    </button>
+    <a class="btn btn--sm" href="#contact"><span>Let's talk</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__list">
+    <a href="#studio"><em>01</em> Studio</a>
+    <a href="#work"><em>02</em> Work</a>
+    <a href="#craft"><em>03</em> Craft</a>
+    <a href="#about"><em>04</em> About</a>
+    <a href="#contact"><em>05</em> Contact</a>
+  </div>
+  <div class="menu__foot">
+    <a href="https://www.instagram.com/wegather.studio/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.behance.net/wegather/" target="_blank" rel="noopener">Behance</a>
+    <a href="https://www.facebook.com/wegatherstudioph" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <div class="hero__aura" data-parallax="0.14" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <!-- floating parallax objects -->
+  <div class="floaters" aria-hidden="true">
+    <div class="floater floater--a" data-parallax="0.30" data-float="7"><div class="chip" style="--c:#FFA51F"><span>◷</span> Tempo</div></div>
+    <div class="floater floater--b" data-parallax="0.46" data-float="9"><div class="chip" style="--c:#D9A441"><span>❧</span> Dogeared</div></div>
+    <div class="floater floater--c" data-parallax="0.22" data-float="11"><div class="chip" style="--c:#FF3D71"><span>◎</span> SpotMo</div></div>
+    <div class="floater floater--d" data-parallax="0.38" data-float="8"><div class="chip" style="--c:#0EA472"><span>₱</span> UnderBudget</div></div>
+    <div class="floater floater--e" data-parallax="0.34" data-float="12"><div class="orb"></div></div>
+    <div class="floater floater--f" data-parallax="0.26" data-float="10"><div class="ring"></div></div>
+    <div class="floater floater--g" data-parallax="0.60" data-float="6"><div class="star">✦</div></div>
+    <div class="floater floater--h" data-parallax="0.34" data-float="13"><div class="star star--sm">✦</div></div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow reveal"><i></i> Philippines &nbsp;·&nbsp; Available for select projects <span class="hide-sm">&nbsp;·&nbsp; Est. 2018</span></p>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="w">Design</span> <span class="w">that</span></span>
+      <span class="line"><span class="w"><em>gathers</em></span> <span class="w">people.</span></span>
+    </h1>
+
+    <div class="hero__meta">
+      <p class="hero__lede reveal">I'm <strong>Gian Rufin</strong> — a graphic designer and brand manager who runs <a href="#studio" data-cursor="view">WeGather.Studio</a>, and builds small, opinionated mobile products on the side. Identity, interface, and everything that makes the two feel like one thing.</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--fill magnetic" href="#work" data-cursor="explore"><span>See the work</span><i class="btn__arrow">↓</i></a>
+        <a class="btn magnetic" href="#studio"><span>The studio</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__foot">
+    <div class="hero__stats">
+      <div class="stat"><b data-count="2018" data-plain="1">2018</b><span>Studio founded</span></div>
+      <div class="stat"><b data-count="5">0</b><span>★ Google &amp; Bark</span></div>
+      <div class="stat"><b data-count="8">0</b><span>Products shipped</span></div>
+      <div class="stat"><b data-count="7">0</b><span>Design disciplines</span></div>
+    </div>
+    <div class="scrollcue"><span>scroll</span><i></i></div>
+  </div>
+</section>
+
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row" data-marquee="1">
+    <div class="ticker__set">
+      <span>Brand Identity</span><em>✦</em><span>Web Design</span><em>✦</em><span>Web Development</span><em>✦</em><span>Brand Guidelines</span><em>✦</em><span>Product Design</span><em>✦</em><span>Packaging</span><em>✦</em><span>Book Covers</span><em>✦</em><span>Slide Decks</span><em>✦</em>
+    </div>
+    <div class="ticker__set">
+      <span>Brand Identity</span><em>✦</em><span>Web Design</span><em>✦</em><span>Web Development</span><em>✦</em><span>Brand Guidelines</span><em>✦</em><span>Product Design</span><em>✦</em><span>Packaging</span><em>✦</em><span>Book Covers</span><em>✦</em><span>Slide Decks</span><em>✦</em>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ STUDIO ═══════════ -->
+<section class="studio" id="studio">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="sechead__num">01 — The main practice</span>
+      <h2 class="sechead__title split">WeGather<span class="dot">.</span>Studio</h2>
+    </div>
+
+    <div class="studio__grid">
+      <div class="studio__visual reveal" data-tilt>
+        <div class="frame">
+          <img src="assets/wegather-thumb.jpg" alt="WeGather.Studio website" loading="lazy" data-parallax="0.06" width="2560" height="1920">
+          <div class="frame__glow" aria-hidden="true"></div>
+        </div>
+        <div class="badge badge--float" data-float="9">
+          <b>5.0</b><span>★★★★★<br>Google &amp; Bark</span>
+        </div>
+      </div>
+
+      <div class="studio__body">
+        <p class="lede reveal">An independent web design and branding studio founded in <strong>2018</strong>. We're committed to delivering high-quality work — and it shows in our 5-star ratings on Google and Bark.</p>
+        <blockquote class="pull reveal">“Our passion lies in challenging the limits of creative excellence. Through our commitment to innovation, we aim to reshape the possibilities within the field of design.”</blockquote>
+
+        <ul class="services reveal">
+          <li><i>01</i> Web Design &amp; Development</li>
+          <li><i>02</i> Brand Guidelines Development</li>
+          <li><i>03</i> Visual Identity Design</li>
+          <li><i>04</i> Website Maintenance</li>
+          <li><i>05</i> Book Cover Design</li>
+          <li><i>06</i> Packaging</li>
+          <li><i>07</i> Slide Deck Presentation</li>
+        </ul>
+
+        <a class="btn btn--fill magnetic reveal" href="http://wegather.studio" target="_blank" rel="noopener" data-cursor="visit"><span>Visit wegather.studio</span><i class="btn__arrow">↗</i></a>
+      </div>
+    </div>
+
+    <div class="clients reveal">
+      <p class="clients__label">Selected clients</p>
+      <div class="clients__row">
+        <div class="client"><b>Fruit Stories</b><span>Brand Design</span></div>
+        <div class="client"><b>William Brothers Manila</b><span>Layout Design</span></div>
+        <div class="client"><b>Advisor Video Marketing</b><span>Web Design &amp; Dev</span></div>
+        <div class="client"><b>SW Cleaning</b><span>Web Development</span></div>
+        <div class="client"><b>Alpha VA</b><span>Brand · Web · Dev</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WORK ═══════════ -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sechead sechead--split">
+      <div>
+        <span class="sechead__num">02 — Products</span>
+        <h2 class="sechead__title split">Things I<br><em>made</em> &amp; shipped.</h2>
+      </div>
+      <p class="sechead__note reveal">Eight self-initiated mobile products. Designed, branded and built end to end — most of them free, most of them offline-first, none of them asking you to make an account.</p>
+    </div>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter work">
+      <button class="filter is-on" data-filter="all" role="tab" aria-selected="true">All <i>8</i></button>
+      <button class="filter" data-filter="productivity" role="tab" aria-selected="false">Productivity <i>4</i></button>
+      <button class="filter" data-filter="lifestyle" role="tab" aria-selected="false">Lifestyle <i>3</i></button>
+      <button class="filter" data-filter="play" role="tab" aria-selected="false">Play <i>1</i></button>
+    </div>
+
+    <div class="cards" id="cards">
+
+      <!-- TEMPO -->
+      <article class="card" data-cat="productivity" style="--accent:#FFA51F;--accent-2:#FF6B3D">
+        <a class="card__link" href="https://gianrufin.github.io/Tempo" target="_blank" rel="noopener" data-cursor="open" aria-label="Open Tempo"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--tempo">
+              <div class="sb"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="scr__h"><b>Today</b><i class="pillx">🔥 42</i></div>
+              <div class="dial"><div class="dial__ring"></div><div class="dial__t"><b>24:00</b><span>focus · DND on</span></div></div>
+              <div class="rows">
+                <div class="row is-done"><i class="tick"></i><span>Morning pages</span><em>12d</em></div>
+                <div class="row is-done"><i class="tick"></i><span>Stretch</span><em>31d</em></div>
+                <div class="row"><i class="tick"></i><span>Read 20 min</span><em>7d</em></div>
+              </div>
+              <div class="tabbar"><i class="is-on"></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Tempo</h3><span class="tag">Android</span></div>
+          <p class="card__tag">Find your tempo</p>
+          <p class="card__desc">Habits, tasks and focus in one rhythm. Streaks that forgive, a focus timer with auto-DND, and best-time reminders.</p>
+          <ul class="chips"><li>Streak freezes</li><li>Auto-DND</li><li>Original sound design</li></ul>
+        </div>
+      </article>
+
+      <!-- DOGEARED -->
+      <article class="card" data-cat="lifestyle" style="--accent:#D9A441;--accent-2:#C2410C">
+        <a class="card__link" href="https://wegatherstudio.github.io/dogeared/landing.html" target="_blank" rel="noopener" data-cursor="open" aria-label="Open Dogeared"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--dog">
+              <div class="sb sb--dark"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="scr__h scr__h--dark"><b>Shelf</b><i class="pillx pillx--gold">Lv 7</i></div>
+              <div class="book">
+                <div class="book__cover"><span>▍</span></div>
+                <div class="book__meta"><b>The Overstory</b><span>p.214 / 502</span><div class="bar"><i style="--w:43%"></i></div></div>
+              </div>
+              <div class="session"><b>42:10</b><span>session · +18 pages</span></div>
+              <div class="quote">“The best arguments in the world won't change a person's mind. The only thing that can do that is a good story.”</div>
+              <div class="tabbar tabbar--dark"><i class="is-on"></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Dogeared</h3><span class="tag">PWA</span></div>
+          <p class="card__tag">Build a reading life</p>
+          <p class="card__desc">Track sessions like workouts, save the quotes that matter, and turn every book into something worth remembering.</p>
+          <ul class="chips"><li>Reading sessions</li><li>Quote cards</li><li>Monthly Wrap</li></ul>
+        </div>
+      </article>
+
+      <!-- SPOTMO -->
+      <article class="card" data-cat="lifestyle" style="--accent:#FF3D71;--accent-2:#7C3AED">
+        <a class="card__link" href="https://gianrufin.github.io/SpotMo/landing.html" target="_blank" rel="noopener" data-cursor="open" aria-label="Open SpotMo"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--spot">
+              <div class="sb"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="map">
+                <div class="map__grid"></div>
+                <i class="pin pin--1"></i><i class="pin pin--2"></i><i class="pin pin--3"></i><i class="pin pin--4"></i>
+                <div class="map__you"><span></span></div>
+              </div>
+              <div class="quickfilters"><i class="is-on">Today</i><i>Tomorrow</i><i>Weekend</i></div>
+              <div class="poster">
+                <div class="poster__art"></div>
+                <div class="poster__meta"><em>● happening now</em><b>Open Mic — Katipunan</b><span>Route 196 · 8PM · Free</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>SpotMo</h3><span class="tag">Web</span></div>
+          <p class="card__tag">Local events near you</p>
+          <p class="card__desc">Live music, open mics, night markets and pop-ups on a map — poster-first browsing instead of an algorithmic feed.</p>
+          <ul class="chips"><li>Map by day</li><li>Happening now</li><li>No sign-up</li></ul>
+        </div>
+      </article>
+
+      <!-- BITESIZE -->
+      <article class="card" data-cat="productivity" style="--accent:#FF6B4A;--accent-2:#FFC24A">
+        <a class="card__link" href="https://gianrufin.github.io/BiteSize" target="_blank" rel="noopener" data-cursor="open" aria-label="Open BiteSize"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--bite">
+              <div class="sb"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="scan"><div class="scan__doc"><i></i><i></i><i></i><i></i></div><div class="scan__beam"></div><span>scanning receipt…</span></div>
+              <div class="items">
+                <div class="item"><span>Sisig</span><b>₱320</b><i class="av av--1">J</i></div>
+                <div class="item"><span>Sinigang</span><b>₱450</b><i class="av av--2">M</i></div>
+                <div class="item is-shared"><span>Rice ×4 <em>shared</em></span><b>₱120</b><i class="av av--3">+3</i></div>
+              </div>
+              <div class="total"><span>Your share</span><b>₱413.75</b></div>
+              <div class="paybar"><i style="--w:66%"></i><span>2 of 4 paid</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>BiteSize</h3><span class="tag">PWA</span></div>
+          <p class="card__tag">Split it fair. Pay it easy.</p>
+          <p class="card__desc">Scan a receipt, share a link, everyone claims and pays their share. No spreadsheets, no downloads, no accounts.</p>
+          <ul class="chips"><li>AI receipt scan</li><li>GCash &amp; cash</li><li>Realtime sync</li></ul>
+        </div>
+      </article>
+
+      <!-- UNDERBUDGET -->
+      <article class="card" data-cat="productivity" style="--accent:#0EA472;--accent-2:#34D399">
+        <a class="card__link" href="https://gianrufin.github.io/UnderBudget/landing" target="_blank" rel="noopener" data-cursor="open" aria-label="Open UnderBudget"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--budget">
+              <div class="sb"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="big"><span>Left to spend</span><b>₱ 1,284<small>.50</small></b><div class="bar bar--lg"><i style="--w:64%"></i></div><em>₱2,715.50 of ₱4,000</em></div>
+              <div class="list">
+                <div class="li is-got"><span>Coffee beans</span><b>₱540</b></div>
+                <div class="li is-got"><span>Chicken 1kg</span><b>₱285</b></div>
+                <div class="li"><span>Olive oil</span><b>₱420</b></div>
+              </div>
+              <div class="keypad"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>.</i><i>0</i><i class="k-ok">✓</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>UnderBudget</h3><span class="tag">PWA</span></div>
+          <p class="card__tag">Know what's left before checkout</p>
+          <p class="card__desc">A fast, mobile-first budget calculator for grocery runs and fixed-budget shopping. The screen warms up as you get close to the limit.</p>
+          <ul class="chips"><li>One-hand keypad</li><li>Offline &amp; local</li><li>No account</li></ul>
+        </div>
+      </article>
+
+      <!-- NEEDLEDROP -->
+      <article class="card" data-cat="lifestyle" style="--accent:#E7452C;--accent-2:#111111">
+        <a class="card__link" href="https://gianrufin.github.io/needledrop" target="_blank" rel="noopener" data-cursor="open" aria-label="Open Needledrop"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--needle">
+              <div class="sb sb--dark"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="compass">
+                <div class="compass__ring"><span>N</span><span>E</span><span>S</span><span>W</span></div>
+                <div class="compass__arrow">➤</div>
+              </div>
+              <div class="dist"><b>142<small>m</small></b><span>to your needle</span></div>
+              <div class="dropbtn">drop a needle</div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Needledrop</h3><span class="tag">Web</span></div>
+          <p class="card__tag">Find your way back</p>
+          <p class="card__desc">Drop a GPS needle where you parked, camped or wandered off — then follow one simple directional arrow home.</p>
+          <ul class="chips"><li>One-tap drop</li><li>Live bearing</li><li>Works offline</li></ul>
+        </div>
+      </article>
+
+      <!-- RIGLIST -->
+      <article class="card" data-cat="productivity" style="--accent:#C8E04A;--accent-2:#65A30D">
+        <a class="card__link" href="https://riglist-app.web.app/landing.html" target="_blank" rel="noopener" data-cursor="open" aria-label="Open RigList"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--rig">
+              <div class="sb sb--dark"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="scr__h scr__h--dark"><b>Sierra Madre run</b><i class="pillx pillx--lime">3 days</i></div>
+              <div class="load"><span>Loadout</span><div class="bar bar--lime"><i style="--w:78%"></i></div><em>68 / 87 items packed</em></div>
+              <div class="checks">
+                <div class="chk is-on"><i></i>Recovery boards</div>
+                <div class="chk is-on"><i></i>Dual battery + fridge</div>
+                <div class="chk is-on"><i></i>Water — 40L</div>
+                <div class="chk"><i></i>Awning &amp; poles</div>
+                <div class="chk"><i></i>Tyre deflator</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>RigList</h3><span class="tag">Web</span></div>
+          <p class="card__tag">Your gear, your rig, your trips</p>
+          <p class="card__desc">Trip checklist and loadout planner for car campers and overlanders. Free, offline-first, no app store required.</p>
+          <ul class="chips"><li>Loadout planner</li><li>Trip templates</li><li>Offline-first</li></ul>
+        </div>
+      </article>
+
+      <!-- WORDLE TAGALOG -->
+      <article class="card" data-cat="play" style="--accent:#6AAA64;--accent-2:#C9B458">
+        <a class="card__link" href="https://gianrufin.github.io/WordleTagalog" target="_blank" rel="noopener" data-cursor="play" aria-label="Open Wordle Tagalog"></a>
+        <div class="card__stage" data-tilt>
+          <div class="phone">
+            <div class="phone__screen scr scr--wordle">
+              <div class="sb sb--dark"><span>9:41</span><span class="sb__r">▮▮▮</span></div>
+              <div class="scr__h scr__h--dark"><b>Salitaan</b><i class="pillx pillx--green">🇵🇭</i></div>
+              <div class="tiles">
+                <i class="t t--y">B</i><i class="t">A</i><i class="t t--g">H</i><i class="t">A</i><i class="t">Y</i>
+                <i class="t t--g">T</i><i class="t t--y">U</i><i class="t t--g">B</i><i class="t">I</i><i class="t">G</i>
+                <i class="t t--g">L</i><i class="t t--g">A</i><i class="t t--g">M</i><i class="t t--g">I</i><i class="t t--g">G</i>
+                <i class="t t--e"></i><i class="t t--e"></i><i class="t t--e"></i><i class="t t--e"></i><i class="t t--e"></i>
+              </div>
+              <div class="kb"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <div class="card__top"><h3>Wordle Tagalog</h3><span class="tag">Web</span></div>
+          <p class="card__tag">Play Wordle, but Tagalog</p>
+          <p class="card__desc">A mobile-first Filipino word puzzle with a fresh five-letter word every midnight, Manila time.</p>
+          <ul class="chips"><li>Daily at 12AM PHT</li><li>Filipino lexicon</li><li>Share your grid</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CRAFT (horizontal) ═══════════ -->
+<section class="craft" id="craft">
+  <div class="craft__sticky">
+    <div class="craft__head wrap">
+      <span class="sechead__num">03 — How I work</span>
+      <h2 class="sechead__title split">From <em>mark</em> to market.</h2>
+    </div>
+    <div class="craft__track" id="craftTrack">
+      <article class="cr">
+        <span class="cr__n">01</span>
+        <h3>Listen &amp; position</h3>
+        <p>Every identity starts as a conversation, not a moodboard. I dig for the thing the business actually believes, then find the shortest visual route to saying it.</p>
+        <ul><li>Discovery</li><li>Positioning</li><li>Naming support</li></ul>
+      </article>
+      <article class="cr">
+        <span class="cr__n">02</span>
+        <h3>Build the identity</h3>
+        <p>Marks, type systems, colour, layout rules, packaging, book covers. Then a guideline document so the brand survives everyone who touches it after me.</p>
+        <ul><li>Visual identity</li><li>Brand guidelines</li><li>Packaging &amp; print</li></ul>
+      </article>
+      <article class="cr">
+        <span class="cr__n">03</span>
+        <h3>Design the interface</h3>
+        <p>Mobile-first, always. Thumb-reachable controls, honest typography, motion that explains rather than decorates — and states designed for offline, empty and error.</p>
+        <ul><li>UI systems</li><li>Prototyping</li><li>Motion &amp; sound</li></ul>
+      </article>
+      <article class="cr">
+        <span class="cr__n">04</span>
+        <h3>Ship it myself</h3>
+        <p>I build and release what I design — landing pages, PWAs, Android builds. Eight products are live because the handoff never had to leave the room.</p>
+        <ul><li>Web development</li><li>PWA &amp; release</li><li>Maintenance</li></ul>
+      </article>
+      <article class="cr cr--cta">
+        <h3>Got something to launch?</h3>
+        <p>Brand, site, or a product idea you can't stop sketching — let's put it in the world.</p>
+        <a class="btn btn--fill magnetic" href="#contact"><span>Start a project</span><i class="btn__arrow">→</i></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="about" id="about">
+  <div class="wrap about__grid">
+    <div class="about__photo reveal">
+      <div class="portrait" data-tilt>
+        <img src="assets/avatar.jpg" alt="Portrait of Gian Rufin" loading="lazy" width="400" height="400" data-parallax="0.05">
+        <div class="portrait__ring" aria-hidden="true"></div>
+      </div>
+      <div class="sticker" data-float="10" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <text><textPath href="#circ" startOffset="0">graphic designer · brand manager · since 2018 · </textPath></text>
+        </svg>
+        <span class="sticker__mark">gr</span>
+      </div>
+    </div>
+    <div class="about__body">
+      <span class="sechead__num">04 — About</span>
+      <h2 class="sechead__title split">Graphic designer,<br><em>brand manager</em>,<br>reluctant developer.</h2>
+      <p class="lede reveal">By profession I'm a graphic designer and brand manager. In practice that means I spend my days making businesses look and sound like themselves — and my nights turning small daily annoyances into apps.</p>
+      <p class="reveal">WeGather.Studio has been the home for that since 2018: brand identities, guideline systems, packaging, book covers, decks, and websites we design and build ourselves. The products on this page came out of the same studio muscle — a real problem, an identity, an interface, then a release.</p>
+      <div class="about__facts reveal">
+        <div><b>Based</b><span>Philippines · working worldwide</span></div>
+        <div><b>Rated</b><span>5.0 on Google &amp; Bark</span></div>
+        <div><b>Tools</b><span>Figma · Illustrator · InDesign · Photoshop · Webflow · WordPress · Next.js</span></div>
+        <div><b>Also</b><span>YouTube — We Living The Ruf Life</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="contact" id="contact">
+  <div class="contact__aura" data-parallax="0.1" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="sechead__num">05 — Contact</span>
+    <h2 class="contact__title split">Let's <em>gather</em>.</h2>
+    <p class="contact__lede reveal">Brand identity, a website, or a product you want to see live — tell me what you're building and I'll tell you honestly whether I'm the right person for it.</p>
+    <div class="contact__actions reveal">
+      <a class="btn btn--fill btn--lg magnetic" href="http://wegather.studio/contact" target="_blank" rel="noopener" data-cursor="write"><span>Start a project</span><i class="btn__arrow">↗</i></a>
+      <a class="btn btn--lg magnetic" href="https://linktr.ee/gianrufin" target="_blank" rel="noopener"><span>All my links</span></a>
+    </div>
+    <div class="contact__socials reveal">
+      <a href="https://www.instagram.com/wegather.studio/" target="_blank" rel="noopener"><b>Instagram</b><span>@wegather.studio</span></a>
+      <a href="https://www.behance.net/wegather/" target="_blank" rel="noopener"><b>Behance</b><span>/wegather</span></a>
+      <a href="https://www.facebook.com/wegatherstudioph" target="_blank" rel="noopener"><b>Facebook</b><span>/wegatherstudioph</span></a>
+      <a href="https://www.youtube.com/@WeLivingTheRufLife" target="_blank" rel="noopener"><b>YouTube</b><span>@WeLivingTheRufLife</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand"><span class="nav__mark">gr</span><b>Gian Rufin</b><span class="foot__sub">Designer &amp; brand manager · WeGather.Studio</span></div>
+    <div class="foot__cols">
+      <div><b>Products</b>
+        <a href="https://gianrufin.github.io/Tempo" target="_blank" rel="noopener">Tempo</a>
+        <a href="https://wegatherstudio.github.io/dogeared/landing.html" target="_blank" rel="noopener">Dogeared</a>
+        <a href="https://gianrufin.github.io/SpotMo/landing.html" target="_blank" rel="noopener">SpotMo</a>
+        <a href="https://gianrufin.github.io/BiteSize" target="_blank" rel="noopener">BiteSize</a>
+      </div>
+      <div><b>More</b>
+        <a href="https://gianrufin.github.io/UnderBudget/landing" target="_blank" rel="noopener">UnderBudget</a>
+        <a href="https://gianrufin.github.io/needledrop" target="_blank" rel="noopener">Needledrop</a>
+        <a href="https://riglist-app.web.app/landing.html" target="_blank" rel="noopener">RigList</a>
+        <a href="https://gianrufin.github.io/WordleTagalog" target="_blank" rel="noopener">Wordle Tagalog</a>
+      </div>
+      <div><b>Elsewhere</b>
+        <a href="http://wegather.studio" target="_blank" rel="noopener">WeGather.Studio</a>
+        <a href="https://www.behance.net/wegather/" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.instagram.com/wegather.studio/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linktr.ee/gianrufin" target="_blank" rel="noopener">Linktree</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot__bar wrap"><span>© <span id="yr">2026</span> Gian Rufin — WeGather.Studio</span><span>Designed &amp; built in the Philippines</span></div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
