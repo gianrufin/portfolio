@@ -12,6 +12,7 @@ assets/css/main.css   design system, layout, motion
 assets/js/main.js     scroll, cursor, parallax, filters
 assets/avatar.jpg     portrait (from the Linktree profile)
 assets/wegather-thumb.jpg  studio site thumbnail
+assets/og-image.jpg   social share card (2400x1260, rendered from the hero)
 ```
 
 ## Design
@@ -71,6 +72,21 @@ hand. After that, re-run the latest **Deploy to GitHub Pages** workflow (or push
 commit) and the site goes live at:
 
 **https://gianrufin.github.io/portfolio/**
+
+## Social sharing
+
+`assets/og-image.jpg` is the Facebook / LinkedIn / X preview — the hero rendered at
+2400x1260 (the 1.91:1 OG ratio). Regenerate it by screenshotting the hero at a
+1200x630 viewport with `deviceScaleFactor: 2`.
+
+**The og:image URL is absolute and hardcoded** (`https://gianrufin.github.io/portfolio/...`)
+because every scraper rejects relative paths. If the repo is ever renamed again, update
+the `og:image`, `og:url`, `twitter:image` and `canonical` tags in `index.html` to match,
+or the preview silently breaks.
+
+After deploying, force the platforms to re-scrape — they cache aggressively:
+[Facebook debugger](https://developers.facebook.com/tools/debug/) ·
+[LinkedIn inspector](https://www.linkedin.com/post-inspector/)
 
 ## Content sources
 
