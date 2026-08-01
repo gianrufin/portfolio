@@ -17,8 +17,12 @@ assets/wegather-thumb.jpg  studio site thumbnail
 ## Design
 
 The palette is pulled straight from the portrait: **ink** `#0B0C0E`, **cream** `#F0EEE2`,
-**marigold** `#F5C518`. Display type is Instrument Serif, body is Inter, micro-labels are
-JetBrains Mono.
+**marigold** `#F5C518`.
+
+Type is **Space Grotesk** and nothing else — display, body, UI and micro-labels, one
+family, one request. Space Grotesk ships no italic, so accent words (*gathers*, *made*,
+*mark*) are set in marigold with an underline that draws itself in when the heading
+reveals, rather than in an italic that doesn't exist.
 
 Each of the eight products gets its own accent colour and a bespoke phone mockup built in
 pure CSS — an animated focus dial for Tempo, a scanning receipt for BiteSize, flipping tiles
@@ -50,11 +54,15 @@ npx http-server -p 8000
 
 ## Deploying
 
+> This repo is expected to be named **`portfolio`** so the site lands at
+> `gianrufin.github.io/portfolio`. A project site's path is always the repo name —
+> rename under Settings → General if it is still `works`.
+
 `.github/workflows/deploy.yml` publishes the repo root to GitHub Pages on every push.
 
 **One-time setup (has to be done by the repo owner, in the browser):**
 
-> [Settings → Pages](https://github.com/gianrufin/works/settings/pages) →
+> [Settings → Pages](https://github.com/gianrufin/portfolio/settings/pages) →
 > Build and deployment → **Source: GitHub Actions**
 
 This can't be automated — a workflow's `GITHUB_TOKEN` isn't allowed to create a Pages
@@ -62,7 +70,7 @@ site (`Resource not accessible by integration`), so the toggle has to be flipped
 hand. After that, re-run the latest **Deploy to GitHub Pages** workflow (or push any
 commit) and the site goes live at:
 
-**https://gianrufin.github.io/works/**
+**https://gianrufin.github.io/portfolio/**
 
 ## Content sources
 
