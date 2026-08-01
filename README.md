@@ -52,9 +52,17 @@ npx http-server -p 8000
 
 `.github/workflows/deploy.yml` publishes the repo root to GitHub Pages on every push.
 
-One-time setup: **Settings → Pages → Build and deployment → Source: _GitHub Actions_**.
-After that the workflow runs on its own and the site lands at
-`https://gianrufin.github.io/works/`.
+**One-time setup (has to be done by the repo owner, in the browser):**
+
+> [Settings → Pages](https://github.com/gianrufin/works/settings/pages) →
+> Build and deployment → **Source: GitHub Actions**
+
+This can't be automated — a workflow's `GITHUB_TOKEN` isn't allowed to create a Pages
+site (`Resource not accessible by integration`), so the toggle has to be flipped once by
+hand. After that, re-run the latest **Deploy to GitHub Pages** workflow (or push any
+commit) and the site goes live at:
+
+**https://gianrufin.github.io/works/**
 
 ## Content sources
 
