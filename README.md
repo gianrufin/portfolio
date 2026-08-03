@@ -7,7 +7,7 @@ A single-page portfolio for **Gian Rufin** — graphic designer, brand manager, 
 No frameworks, no build step, no dependencies. Three files do the whole thing.
 
 ```
-index.html            structure + the eight hand-built app mockups
+index.html            structure + the nine hand-built app mockups
 assets/css/main.css   design system, layout, motion
 assets/js/main.js     scroll, cursor, parallax, filters
 assets/avatar.jpg     portrait (from the Linktree profile)
@@ -25,10 +25,10 @@ family, one request. Space Grotesk ships no italic, so accent words (*gathers*, 
 *mark*) are set in marigold with an underline that draws itself in when the heading
 reveals, rather than in an italic that doesn't exist.
 
-Each of the eight products gets its own accent colour and a bespoke phone mockup built in
+Each of the nine products gets its own accent colour and a bespoke phone mockup built in
 pure CSS — an animated focus dial for Tempo, a scanning receipt for BiteSize, flipping tiles
-for Wordle Tagalog, a swaying compass for Needledrop, and so on. They animate when they
-scroll into view.
+for Wordle Tagalog, a swaying compass for Needledrop, a pulsing iris for IRIS Alarm, and so
+on. They animate when they scroll into view.
 
 ## Interactions
 

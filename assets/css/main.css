@@ -434,6 +434,15 @@ body.cursor-mag .cursor{width:60px;height:60px;background:color-mix(in srgb,var(
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
 .chips li{font-family:var(--ff-mono);font-size:10px;letter-spacing:.05em;padding:5px 10px;border-radius:8px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:color-mix(in srgb,var(--accent) 82%,var(--fg))}
 
+/* The per-card accents are tuned for the dark surface. On cream, the bright
+   ones (IRIS neon green, RigList lime, Tempo amber) fall below readable
+   contrast, so pull them toward ink while keeping the hue. */
+[data-theme="light"] .card__tag{color:color-mix(in srgb,var(--accent) 55%,#0B0C0E)}
+[data-theme="light"] .chips li{
+  background:color-mix(in srgb,var(--accent) 20%,transparent);
+  color:color-mix(in srgb,var(--accent) 40%,#0B0C0E);
+}
+
 /* ── phone mockups ────────────────────────────────── */
 .phone{
   width:min(100%,214px);aspect-ratio:390/844;border-radius:34px;padding:7px;
@@ -491,6 +500,30 @@ body.cursor-mag .cursor{width:60px;height:60px;background:color-mix(in srgb,var(
 .row.is-done .tick{background:var(--accent);border-color:var(--accent)}
 .row.is-done .tick::after{content:"";position:absolute;left:3px;top:2.4px;width:3px;height:5px;border:1.4px solid #fff;border-top:0;border-left:0;transform:rotate(42deg)}
 .row.is-done span{opacity:.5;text-decoration:line-through}
+
+/* IRIS Alarm — pitch-black first, amber + neon green, per the app itself */
+.scr--iris{background:#000;color:#EDEFE6}
+.iris-head{padding:6px 12px 0;text-align:center}
+.iris-head em{font-style:normal;font-size:5.5px;letter-spacing:.16em;text-transform:uppercase;color:#C6FF3D;display:block}
+.iris-head b{display:block;font-size:30px;letter-spacing:-.05em;line-height:1.1;margin-top:2px}
+.iris-head span{font-size:5.5px;opacity:.5;letter-spacing:.03em}
+.iris-eye{position:relative;width:94px;aspect-ratio:1;margin:auto;display:grid;place-items:center}
+.iris-eye i,.iris-eye u{position:absolute;border-radius:50%;text-decoration:none}
+.iris-eye i{inset:0;border:1px solid rgba(198,255,61,.32)}
+.iris-eye i::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:1px solid rgba(198,255,61,.5);
+  animation:irisPulse 2.6s var(--ease-io) infinite}
+.iris-eye u{width:36px;height:36px;background:radial-gradient(circle at 40% 36%,#C6FF3D,#5C8A12 62%,#0d1a02);
+  box-shadow:0 0 14px rgba(198,255,61,.5)}
+@keyframes irisPulse{0%{transform:scale(1);opacity:.85}70%{transform:scale(1.42);opacity:0}100%{opacity:0}}
+.iris-swipe{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:8px 11px 0}
+.sw{font-style:normal;font-size:6.5px;font-weight:600;text-align:center;padding:8px 4px;border-radius:9px;letter-spacing:.02em}
+.sw--snooze{background:rgba(255,176,32,.16);color:#FFB020;border:1px solid rgba(255,176,32,.3)}
+.sw--stop{background:rgba(198,255,61,.16);color:#C6FF3D;border:1px solid rgba(198,255,61,.32)}
+.iris-picker{display:flex;gap:3px;justify-content:center;padding:0 9px;flex-wrap:wrap}
+.iris-picker i{font-style:normal;font-size:5px;letter-spacing:.05em;padding:4px 6px;border-radius:99px;
+  border:1px solid rgba(255,255,255,.1);color:rgba(237,239,230,.45)}
+.iris-picker i.is-on{background:rgba(198,255,61,.14);border-color:rgba(198,255,61,.4);color:#C6FF3D;font-weight:600}
+.iris-hint{text-align:center;font-size:5.5px;opacity:.4;letter-spacing:.06em;padding:6px 0 12px}
 
 /* Dogeared */
 .scr--dog{background:linear-gradient(180deg,#191512,#221B15 60%,#12100E);color:#F3F2F7}
